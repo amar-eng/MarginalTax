@@ -1,11 +1,13 @@
 // Imports
-
+import { useState, useEffect } from 'react';
 import { useForm } from 'react-hook-form';
 
 // Styles imports
 import '../styles/Form.scss';
 import BreakDown from './BreakDown';
 const InputForm = () => {
+  const [salary, setSalary] = useState(0);
+  //   react-hook-form hook
   const {
     register,
     handleSubmit,
@@ -14,7 +16,7 @@ const InputForm = () => {
 
   // Submit form data to be calculated
   const onSubmit = (data) => {
-    console.log(data.salary);
+    setSalary(data.salary);
   };
   return (
     <>
@@ -33,7 +35,7 @@ const InputForm = () => {
           Calculate
         </button>
       </form>
-      <BreakDown />
+      <BreakDown salary={Number(salary)} />
     </>
   );
 };
