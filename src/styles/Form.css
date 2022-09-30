@@ -1,0 +1,25 @@
+.form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 50%;
+}
+.form__input {
+  background-color: rgb(217, 231, 242);
+  border: none;
+  border-radius: 25px;
+  padding: 10px;
+  font-size: 17px;
+  padding-left: 1rem;
+}
+.form__btn {
+  background-color: rgb(180, 56, 15);
+  border: none;
+  border-radius: 25px;
+  padding: 10px 20px;
+  font-size: 17px;
+  color: whitesmoke;
+}
+/*# sourceMappingURL=Form.css.map */
